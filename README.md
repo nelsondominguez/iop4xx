@@ -6,3 +6,7 @@ PGR-160-3485 JavaScript repo for the iop-4xx project
 <p>Preparing project for development</p>
 
 <p>- added html5-boilerplate_v6.1.0 files to application</p>
+
+<p>inside out project version 400.0</p>
+
+<p>- added base code to index.html and added initial JavaScript to app.js page</p>
