@@ -16,3 +16,9 @@ PGR-160-3485 JavaScript repo for the iop-4xx project
 <p>created the appData object</p>
 
 <p>moved the title & tagline variables into appData and refractored the initializeApplication function</p>
+
+<p>inside out project version 401.1</p>
+
+<p> - added bootstrap to the index.html</p>
+<p> - added a DOM injection of the progressbar in the app.js</p>
+<p> - created the displayPB function in the app.js</p>
