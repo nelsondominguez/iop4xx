@@ -48,11 +48,6 @@ function initializeApplication() {
 
 
     displayPB();
-    // for (i=0; i <= 100; i++) {
-    //     setTimeout(displayPB2(i), 50);
-    // }
-    // applicationUserInterface();
-
 }
 
 var timerCount = 0;
@@ -66,15 +61,27 @@ function displayPB(){
         setTimeout(displayPB, 50);
     } else{
         timerCount = 0;
-        applicationUserInterface();
+
+        document.body.innerHTML = formLogin();
+
         return false;
     }
 }
 
-// function displayPB2(i){
-//     var x = (timerCount < 25) ? '' : (timerCount < 45) ? timerCount + '%' : (timerCount < 65) ? 'Loading ' + timerCount + '%' : 'Loading Application' + timerCount + '%';
-//     document.getElementById("loaderProgressBar").innerHTML = x;
-//     document.getElementById('loaderProgressBar').setAttribute('aria-valuenow', i);
-//     document.getElementById('loaderProgressBar').style.width = i + '%    ';
 
-// }
+// start step-402
+function formLogin(){
+    return '<form id="loginFrm" name="loginFrm" action="#" class="animated zoomIn"><div class="form-group"><label for="email">Email address:</label><input type="email" class="form-control" id="email"value="me@there.com"></div><div class="form-group"><label for="pwd">Password:</label><input type="password" class="form-control" id="pwd" value="dfdf"></div><div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">Remember me </label></div><button id="loginBtn" type="submit" class="btn btn-primary" onclick="validateLogin()">Submit</button></form>';
+}
+
+
+function validateLogin() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("pwd").value;
+    if (email !== '' && password !== '') {
+        document.body.innerHTML = '<main class="animated zoomIn"><h1 id="inNow"> We are in now</h1></main>';
+    } else {
+        alert('bad');
+    }
+    return false;
+}
