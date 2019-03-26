@@ -22,3 +22,9 @@ PGR-160-3485 JavaScript repo for the iop-4xx project
 <p> - added bootstrap to the index.html</p>
 <p> - added a DOM injection of the progressbar in the app.js</p>
 <p> - created the displayPB function in the app.js</p>
+
+<p>inside out project version 402.0</p>
+
+<p> - added style.css and linked in index.html</p>
+<p> - added login form function and call after progress bar is loaded</p>
+<p> - added minimal validateLogin function to check for blank strings</p>
