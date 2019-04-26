@@ -1,10 +1,68 @@
 /* CSS Document */
 
-/* start step-402.0  */
-html,
-body {
+ /* begin 403 */
+nav {
     font-size: 14px;
 }
+.navbar {
+    height: 70px;
+}
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+}
+.contStage {
+    position: fixed;
+    top: 72px;
+    left: 180px;
+    bottom: 72px;
+    right: 16px;
+    padding: 12px;
+    overflow-y: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 71px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: thin solid #AAA;
+    font-weight: bold;
+    text-align: left;
+    background-color: #CCC;
+}
+.sidebar ul {
+    list-style: none;
+    min-width: 160px;
+}
+.sidebar ul li {
+    border-bottom: thin solid #AAA;
+    border-top: thin solid #CCC;
+}
+.sidebar ul li:hover {
+    background-color: #DDD;
+}
+.sidebar ul li a {
+    color: #555;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    color: #000;
+}
+.placeholders {
+    padding-bottom: 3rem;
+}
+.placeholder img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+#applicationWrapper {
+    padding-top: 150px;
+}
+/* end 403 */
+
 
 #loginFrm {
     max-width: 200px;
@@ -51,5 +109,3 @@ body {
 #inNow {
     margin-top: 15%;
 }
-
-/* end step-402.0 */
