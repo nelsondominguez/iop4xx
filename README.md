@@ -28,3 +28,19 @@ PGR-160-3485 JavaScript repo for the iop-4xx project
 <p> - added style.css and linked in index.html</p>
 <p> - added login form function and call after progress bar is loaded</p>
 <p> - added minimal validateLogin function to check for blank strings</p>
+
+<p>inside out project version 403.0</p>
+<p>-index.html</p>
+
+<p>updated all hrefs/links to passive protocol</p>
+<p>moved style sheet link below animate and bootstrap to allow for custom styles to override all</p>
+<p>style.css</p>
+
+<p>added styles for application interface - sidebar, wrapper, navigation, etc.</p>
+<p>app.js</p>
+
+<p>added the applicationUserInterface function which defines the application user interface.</p>
+<p>added the buildMenu function which returns the navigation menu and will increase in dynamic navigation building</p>
+<p>added the buildMain function which returns the primary content area and will evolve to return content dynamically</p>
+<p>replaced document write with call to applicationUserInterface function in the validateLogin function</p>
+<p>added the linkClicked function which is called by click events on anchor elements and returns dynamically driven results</p>
