@@ -60,3 +60,23 @@ app.js</p>
 <p>added the buildMain function which returns the primary content area and will evolve to return content dynamically</p>
 <p>replaced document write with call to applicationUserInterface function in the validateLogin function</p>
 <p>added the linkClicked function which is called by click events on anchor elements and returns dynamically driven results</p>
+
+inside out project version 405.0
+
+-index.html
+  -added script tag to pull in ajax.js file
+
+-style.css
+  -modifed .contStage by adjusting the (left: 180px;) - changed value to 80px   to close gap between side manu and the content
+  cleaned up comments
+
+-app.js
+  -cleaned up comments
+  -added sideMenu array to the appData object to be used to call ajax to load the pages & posts from the me site
+    modified the displayPB() function - changed preloader time from 50 to 15 to speed up load during development
+  modified the buildMenu() function to accept menu items from appData object - removed call to quotes array
+  modified the linkClicked() function
+  
+-added ajax call to grab posts/pages
+
+-added the assets/data/ajax.js file
